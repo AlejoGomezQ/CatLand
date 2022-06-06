@@ -1,8 +1,24 @@
 <template>
   <div id="app">
+    <CatLandHeader/>
     <router-view />
+    <CatLandFooter/>
   </div>
 </template>
+
+<script>
+import CatLandHeader from "@/components/general/CatLandHeader";
+import CatLandFooter from "@/components/general/CatLandFooter";
+
+export default {
+  name: 'App',
+
+  components: {
+    CatLandHeader,
+    CatLandFooter
+  }
+}
+</script>
 
 <style>
 body {

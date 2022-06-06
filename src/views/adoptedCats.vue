@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Gatitos adoptados</h1>
   </div>
 </template>

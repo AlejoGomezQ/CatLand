@@ -47,13 +47,10 @@ export default {
   methods: {
     addToAdopted() {
       axios.post(`${CAT_API.BASE_URL}favourites?${CAT_API.API_KEY}`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          image_id: "18",
-        }),
-      });
+        image_id: this.cat.id
+      })
+        .then(response => console.log(response))
+        .catch(err => console.error(err))
     },
   },
 };
