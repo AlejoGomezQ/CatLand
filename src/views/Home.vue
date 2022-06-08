@@ -2,7 +2,7 @@
   <div class="home">
     <Loader v-show="isLoading" />
     <div class="main" v-show="!isLoading">
-      <h1 class="title text-center">Gatitos para adoptar</h1>
+      <h1 class="title text-center my-5">Gatitos para adoptar</h1>
       <section class="row m-4">
         <div
           class="col-12 col-sm-6 col-lg-3 d-flex justify-content-around"

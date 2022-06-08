@@ -21,10 +21,10 @@ export default {
 </script>
 
 <style>
-body {
+#app {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #dddddd;
+  background: #eeeeee;
 }
 </style>
