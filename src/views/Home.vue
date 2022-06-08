@@ -9,7 +9,11 @@
           v-for="(c, index) in cats"
           :key="index"
         >
-          <CatCard :cat="c" />
+          <CatCard :cat="c">
+            <template slot="catPhoto">
+              <img :src="c.url" alt="" />
+            </template>
+          </CatCard>
         </div>
       </section>
     </div>
@@ -37,7 +41,7 @@ export default {
   data() {
     return {
       cats: {},
-      isLoading: false
+      isLoading: false,
     };
   },
 

@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <CatLandHeader/>
+    <CatLandHeader />
     <router-view />
-    <CatLandFooter/>
+    <CatLandFooter />
   </div>
 </template>
 
@@ -11,13 +11,13 @@ import CatLandHeader from "@/components/general/CatLandHeader";
 import CatLandFooter from "@/components/general/CatLandFooter";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     CatLandHeader,
-    CatLandFooter
-  }
-}
+    CatLandFooter,
+  },
+};
 </script>
 
 <style>

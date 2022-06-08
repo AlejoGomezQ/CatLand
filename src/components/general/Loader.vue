@@ -27,7 +27,11 @@ export default {
     #5dffd431 10%,
     rgba(255, 255, 255, 0) 42%
   );
-  background: -o-linear-gradient(left, #5dffd431 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(
+    left,
+    #5dffd431 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
   background: -ms-linear-gradient(
     left,
     #5dffd431 10%,

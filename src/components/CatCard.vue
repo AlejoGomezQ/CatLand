@@ -1,6 +1,6 @@
 <template>
   <div class="card mb-4">
-    <img :src="cat.url" alt="" class="card-img-top" />
+    <slot name="catPhoto"></slot>
     <div class="card-body">
       <h3 class="card-title">Gatito</h3>
       <p class="card-text">
@@ -42,15 +42,20 @@ export default {
       type: Object,
       required: true,
     },
+    adoptedCat: {
+      type: Object,
+      required: true,
+    },
   },
 
   methods: {
     addToAdopted() {
-      axios.post(`${CAT_API.BASE_URL}favourites?${CAT_API.API_KEY}`, {
-        image_id: this.cat.id
-      })
-        .then(response => console.log(response))
-        .catch(err => console.error(err))
+      axios
+        .post(`${CAT_API.BASE_URL}favourites?${CAT_API.API_KEY}`, {
+          image_id: this.cat.id,
+        })
+        .then((response) => console.log(response))
+        .catch((err) => console.error(err));
     },
   },
 };
